@@ -7,6 +7,6 @@ ASTRO es un framework de JavaScript que permite manejar facilmente el estado de 
 - Manejo de estado
 - Renderizado del lado del servidor
 - Soporte para componentes reutilizables
-- Integracion con herramientas de desarrollo modernas
+- Integracion con herramientas de desarrollo modernass
 
 
