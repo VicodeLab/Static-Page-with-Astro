@@ -1,0 +1,56 @@
+---
+import Footer from '../components/Footer.astro';
+---
+<html lang="es">
+  <head>
+    <title>Productos - Figuras Anime</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body { margin: 0; padding-bottom: 2.5rem; font-family: 'Segoe UI', Arial, sans-serif; background: #f6f6f6; }
+      .nav { display: flex; justify-content: center; gap: 1.5rem; margin: 2rem 0 1.5rem 0; }
+      .nav-img { width: 90px; height: 90px; border-radius: 1.1rem; object-fit: cover; box-shadow: 0 2px 12px #0001; transition: transform 0.12s; }
+      .nav-img:hover { transform: scale(1.08); box-shadow: 0 6px 20px #0002; }
+      .productos-list { max-width: 700px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; }
+      .producto { background: #fff; border-radius: 1rem; box-shadow: 0 2px 12px #0001; padding: 1.2rem; text-align: center; }
+      .producto img { width: 100%; height: 140px; object-fit: cover; border-radius: 0.8rem; }
+      .producto-nombre { font-weight: 600; margin: 0.7rem 0 0.3rem 0; color: #2b2b2b; }
+      .producto-desc { font-size: 0.98rem; color: #444; }
+      @media (max-width: 700px) { .productos-list { grid-template-columns: 1fr; gap: 1.3rem; } .nav-img { width: 70px; height: 70px; } }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="/"><img class="nav-img" src="https://i.imgur.com/3QKX3oC.jpg" alt="Inicio" title="Inicio" /></a>
+      <a href="/quienes-somos"><img class="nav-img" src="https://i.imgur.com/0Nf3QJw.jpg" alt="¿Quiénes somos?" title="¿Quiénes somos?" /></a>
+      <a href="/contacto"><img class="nav-img" src="https://i.imgur.com/9oT3w4g.jpg" alt="Contacto" title="Contacto" /></a>
+      <a href="https://ejemplo.com" target="_blank" rel="noopener"><img class="nav-img" src="https://i.imgur.com/3yXkQF8.jpg" alt="Tienda Aliada" title="Tienda Aliada" /></a>
+    </nav>
+    <main>
+      <h1 style="text-align:center;margin-bottom:2rem;font-size:2rem;">Nuestros Productos</h1>
+      <div class="productos-list">
+        <div class="producto">
+          <img src="https://i.imgur.com/7nYvL0U.jpg" alt="Figura Naruto" />
+          <div class="producto-nombre">Naruto Uzumaki</div>
+          <div class="producto-desc">Figura de colección, 16cm, edición limitada.</div>
+        </div>
+        <div class="producto">
+          <img src="https://i.imgur.com/3bYwK8e.jpg" alt="Figura Luffy" />
+          <div class="producto-nombre">Monkey D. Luffy</div>
+          <div class="producto-desc">Figura articulada, 20cm, detalles premium.</div>
+        </div>
+        <div class="producto">
+          <img src="https://i.imgur.com/7x9fKjB.jpg" alt="Figura Goku" />
+          <div class="producto-nombre">Son Goku</div>
+          <div class="producto-desc">Super Saiyan, 18cm, base incluida.</div>
+        </div>
+        <div class="producto">
+          <img src="https://i.imgur.com/0KXb9kA.jpg" alt="Figura Mikasa" />
+          <div class="producto-nombre">Mikasa Ackerman</div>
+          <div class="producto-desc">Detalles realistas, 17cm, Attack on Titan.</div>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

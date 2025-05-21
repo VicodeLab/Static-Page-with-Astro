@@ -1,0 +1,40 @@
+---
+import Footer from '../components/Footer.astro';
+---
+<html lang="es">
+  <head>
+    <title>¿Quiénes somos? - Figuras Anime</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body { margin: 0; padding-bottom: 2.5rem; font-family: 'Segoe UI', Arial, sans-serif; background: #f6f6f6; }
+      .nav { display: flex; justify-content: center; gap: 1.5rem; margin: 2rem 0 1.5rem 0; }
+      .nav-img { width: 90px; height: 90px; border-radius: 1.1rem; object-fit: cover; box-shadow: 0 2px 12px #0001; transition: transform 0.12s; }
+      .nav-img:hover { transform: scale(1.08); box-shadow: 0 6px 20px #0002; }
+      .about { max-width: 700px; margin: 0 auto; background: #fff; border-radius: 1.2rem; box-shadow: 0 2px 12px #0001; padding: 2rem; }
+      .about h2 { margin-top: 0; color: #2b2b2b; }
+      .about p { color: #444; font-size: 1.1rem; line-height: 1.7; }
+      @media (max-width: 700px) { .about { padding: 1rem; } .nav-img { width: 70px; height: 70px; } }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="/"><img class="nav-img" src="https://i.imgur.com/3QKX3oC.jpg" alt="Inicio" title="Inicio" /></a>
+      <a href="/productos"><img class="nav-img" src="https://i.imgur.com/3QKX3oC.jpg" alt="Productos" title="Productos" /></a>
+      <a href="/contacto"><img class="nav-img" src="https://i.imgur.com/9oT3w4g.jpg" alt="Contacto" title="Contacto" /></a>
+      <a href="https://ejemplo.com" target="_blank" rel="noopener"><img class="nav-img" src="https://i.imgur.com/3yXkQF8.jpg" alt="Tienda Aliada" title="Tienda Aliada" /></a>
+    </nav>
+    <main>
+      <div class="about">
+        <h2>¿Quiénes somos?</h2>
+        <p>
+          Somos una empresa apasionada por el coleccionismo y la cultura anime. Nos dedicamos a ofrecer figuras de alta calidad de tus personajes favoritos, con atención al detalle y un servicio al cliente excepcional. Nuestro objetivo es acercar el mundo del anime a todos los fanáticos, brindando productos auténticos y exclusivos.
+        </p>
+        <p>
+          Fundada en 2024, nuestra tienda ha crecido gracias a la confianza de nuestros clientes y la dedicación de nuestro equipo. ¡Gracias por elegirnos!
+        </p>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
